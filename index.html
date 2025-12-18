@@ -309,3 +309,625 @@ gaining exposure to real-time workflows and problem-solving techniques.
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Santhiya | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* RESET */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:#0f0f0f;
+  color:white;
+  overflow-x:hidden;
+  position:relative;
+}
+
+/* ✅ CHECKED BACKGROUND */
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  background:
+    linear-gradient(rgba(0,229,192,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,229,192,0.05) 1px, transparent 1px);
+  background-size:40px 40px;
+  z-index:-1;
+}
+
+/* NAV */
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:12px 6%;
+  position:sticky;
+  top:0;
+  background:#0f0f0f;
+  z-index:1000;
+}
+nav h3{ color:#00e5c0; }
+nav a{
+  margin-left:18px;
+  text-decoration:none;
+  color:#ddd;
+  font-size:14px;
+}
+nav a:hover{ color:#00e5c0; }
+
+/* HERO */
+.hero{
+  min-height:80vh;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  align-items:center;
+  padding:0 6%;
+  gap:40px;
+}
+.hero h1{
+  font-size:44px;
+  color:#00e5c0;
+}
+.hero p{
+  margin:14px 0 24px;
+  color:#ccc;
+  line-height:1.6;
+}
+
+.btn{
+  padding:10px 26px;
+  background:#00e5c0;
+  color:black;
+  border-radius:25px;
+  font-weight:600;
+  text-decoration:none;
+}
+
+/* PROFILE */
+.profile{
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  overflow:hidden;
+  border:3px solid #00e5c0;
+  margin:auto;
+}
+.profile img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+/* SECTION */
+section{
+  padding:55px 6%;
+}
+.title{
+  text-align:center;
+  font-size:26px;
+  color:#00e5c0;
+  margin-bottom:28px;
+}
+
+/* ✅ COMMON SMALL CARD */
+.card-wrap{
+  display:flex;
+  justify-content:center;
+}
+
+.card{
+  width:360px;
+  background:rgba(255,255,255,0.06);
+  border:1px solid rgba(255,255,255,0.1);
+  border-radius:16px;
+  padding:22px;
+  text-align:center;
+  transition:0.3s;
+}
+.card:hover{
+  transform:translateY(-6px);
+  border-color:#00e5c0;
+}
+
+.card h3{
+  color:#00e5c0;
+  margin-bottom:6px;
+}
+.card small{
+  color:#aaa;
+}
+.card p{
+  margin-top:10px;
+  font-size:13.5px;
+  color:#ccc;
+  line-height:1.6;
+}
+
+/* ✅ PROJECTS – VERY COMPACT */
+.projects{
+  display:flex;
+  justify-content:center;
+  gap:18px;
+  flex-wrap:wrap;
+}
+
+.project{
+  width:170px;
+  padding:16px;
+  background:rgba(255,255,255,0.06);
+  border-radius:14px;
+  border:1px solid rgba(255,255,255,0.1);
+  text-align:center;
+  transition:.3s;
+}
+.project:hover{
+  transform:translateY(-5px);
+  border-color:#00e5c0;
+}
+.project h4{
+  color:#00e5c0;
+  font-size:14px;
+}
+.project p{
+  font-size:12px;
+  color:#bbb;
+  margin:6px 0 10px;
+}
+.project a{
+  font-size:12px;
+  text-decoration:none;
+  color:#00e5c0;
+}
+
+/* CONTACT */
+.contact{
+  text-align:center;
+}
+.contact p{
+  margin-top:10px;
+  font-size:14px;
+}
+.contact a{
+  color:#00e5c0;
+  text-decoration:none;
+}
+.contact a:hover{
+  color:#5fffe3;
+  text-decoration:underline;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:18px;
+  color:#777;
+  font-size:13px;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .hero{
+    grid-template-columns:1fr;
+    text-align:center;
+  }
+}
+@media(max-width:500px){
+  .hero h1{ font-size:34px; }
+  .card{ width:100%; }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <h3>Santhiya</h3>
+  <div>
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#internship">Internship</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero" id="about">
+  <div>
+    <h1>Hello, I'm Santhiya</h1>
+    <p>
+Web Development student passionate about building clean,
+responsive and interactive web applications using modern tools.
+    </p>
+    <a class="btn" href="resume.pdf" download>Download Resume</a>
+  </div>
+
+  <div class="profile">
+    <img src="profile.jpg" alt="Profile">
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section>
+  <h2 class="title">About Me</h2>
+  <div class="card-wrap">
+    <div class="card">
+      <p>
+I am a Web & Python Developer with hands-on experience in HTML, CSS,
+JavaScript, Python, PHP, and MySQL. I enjoy converting ideas into
+real-world projects while continuously learning modern development practices.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- INTERNSHIP -->
+<section id="internship">
+  <h2 class="title">Internship</h2>
+  <div class="card-wrap">
+    <div class="card">
+      <h3>Python Development Intern</h3>
+      <small>GTN Infotech, Coimbatore</small>
+      <p>
+Completed Python Development training with practical tasks and mini-projects,
+gaining exposure to real-time workflows and problem-solving techniques.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2 class="title">Projects</h2>
+
+  <div class="projects">
+    <div class="project">
+      <h4>Visitor Management System</h4>
+      <p>PHP • MySQL</p>
+      <a href="#">View</a>
+    </div>
+
+    <div class="project">
+      <h4>E-Learning Platform</h4>
+      <p>HTML • CSS • JS</p>
+      <a href="#">View</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <h2 class="title">Contact</h2>
+  <p>📧 <a href="mailto:santhiyamathiyazhagan526@gmail.com">santhiyamathiyazhagan526@gmail.com</a></p>
+  <p>🔗 <a href="https://www.linkedin.com/in/santhiyamathiyazhagan-a08b10280" target="_blank">LinkedIn</a></p>
+  <p>💻 <a href="https://github.com/santhiyamathiyazhagan526-art" target="_blank">GitHub</a></p>
+</section>
+
+<footer>
+  © 2025 Santhiya • Portfolio
+</footer>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Santhiya | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* RESET */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:#0f0f0f;
+  color:white;
+  overflow-x:hidden;
+  position:relative;
+}
+
+/* ✅ CHECKED BACKGROUND */
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  background:
+    linear-gradient(rgba(0,229,192,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,229,192,0.05) 1px, transparent 1px);
+  background-size:40px 40px;
+  z-index:-1;
+}
+
+/* NAV */
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:12px 6%;
+  position:sticky;
+  top:0;
+  background:#0f0f0f;
+  z-index:1000;
+}
+nav h3{ color:#00e5c0; }
+nav a{
+  margin-left:18px;
+  text-decoration:none;
+  color:#ddd;
+  font-size:14px;
+}
+nav a:hover{ color:#00e5c0; }
+
+/* HERO */
+.hero{
+  min-height:80vh;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  align-items:center;
+  padding:0 6%;
+  gap:40px;
+}
+.hero h1{
+  font-size:44px;
+  color:#00e5c0;
+}
+.hero p{
+  margin:14px 0 24px;
+  color:#ccc;
+  line-height:1.6;
+}
+
+.btn{
+  padding:10px 26px;
+  background:#00e5c0;
+  color:black;
+  border-radius:25px;
+  font-weight:600;
+  text-decoration:none;
+}
+
+/* PROFILE */
+.profile{
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  overflow:hidden;
+  border:3px solid #00e5c0;
+  margin:auto;
+}
+.profile img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+/* SECTION */
+section{
+  padding:55px 6%;
+}
+.title{
+  text-align:center;
+  font-size:26px;
+  color:#00e5c0;
+  margin-bottom:28px;
+}
+
+/* ✅ COMMON SMALL CARD */
+.card-wrap{
+  display:flex;
+  justify-content:center;
+}
+
+.card{
+  width:360px;
+  background:rgba(255,255,255,0.06);
+  border:1px solid rgba(255,255,255,0.1);
+  border-radius:16px;
+  padding:22px;
+  text-align:center;
+  transition:0.3s;
+}
+.card:hover{
+  transform:translateY(-6px);
+  border-color:#00e5c0;
+}
+
+.card h3{
+  color:#00e5c0;
+  margin-bottom:6px;
+}
+.card small{
+  color:#aaa;
+}
+.card p{
+  margin-top:10px;
+  font-size:13.5px;
+  color:#ccc;
+  line-height:1.6;
+}
+
+/* ✅ PROJECTS – VERY COMPACT */
+.projects{
+  display:flex;
+  justify-content:center;
+  gap:18px;
+  flex-wrap:wrap;
+}
+
+.project{
+  width:170px;
+  padding:16px;
+  background:rgba(255,255,255,0.06);
+  border-radius:14px;
+  border:1px solid rgba(255,255,255,0.1);
+  text-align:center;
+  transition:.3s;
+}
+.project:hover{
+  transform:translateY(-5px);
+  border-color:#00e5c0;
+}
+.project h4{
+  color:#00e5c0;
+  font-size:14px;
+}
+.project p{
+  font-size:12px;
+  color:#bbb;
+  margin:6px 0 10px;
+}
+.project a{
+  font-size:12px;
+  text-decoration:none;
+  color:#00e5c0;
+}
+
+/* CONTACT */
+.contact{
+  text-align:center;
+}
+.contact p{
+  margin-top:10px;
+  font-size:14px;
+}
+.contact a{
+  color:#00e5c0;
+  text-decoration:none;
+}
+.contact a:hover{
+  color:#5fffe3;
+  text-decoration:underline;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:18px;
+  color:#777;
+  font-size:13px;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .hero{
+    grid-template-columns:1fr;
+    text-align:center;
+  }
+}
+@media(max-width:500px){
+  .hero h1{ font-size:34px; }
+  .card{ width:100%; }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <h3>Santhiya</h3>
+  <div>
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#internship">Internship</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero" id="about">
+  <div>
+    <h1>Hello, I'm Santhiya</h1>
+    <p>
+Web Development student passionate about building clean,
+responsive and interactive web applications using modern tools.
+    </p>
+    <a class="btn" href="resume.pdf" download>Download Resume</a>
+  </div>
+
+  <div class="profile">
+    <img src="profile.jpg" alt="Profile">
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section>
+  <h2 class="title">About Me</h2>
+  <div class="card-wrap">
+    <div class="card">
+      <p>
+I am a Web & Python Developer with hands-on experience in HTML, CSS,
+JavaScript, Python, PHP, and MySQL. I enjoy converting ideas into
+real-world projects while continuously learning modern development practices.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- INTERNSHIP -->
+<section id="internship">
+  <h2 class="title">Internship</h2>
+  <div class="card-wrap">
+    <div class="card">
+      <h3>Python Development Intern</h3>
+      <small>GTN Infotech, Coimbatore</small>
+      <p>
+Completed Python Development training with practical tasks and mini-projects,
+gaining exposure to real-time workflows and problem-solving techniques.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2 class="title">Projects</h2>
+
+  <div class="projects">
+    <div class="project">
+      <h4>Visitor Management System</h4>
+      <p>PHP • MySQL</p>
+      <a href="#">View</a>
+    </div>
+
+    <div class="project">
+      <h4>E-Learning Platform</h4>
+      <p>HTML • CSS • JS</p>
+      <a href="#">View</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <h2 class="title">Contact</h2>
+  <p>📧 <a href="mailto:santhiyamathiyazhagan526@gmail.com">santhiyamathiyazhagan526@gmail.com</a></p>
+  <p>🔗 <a href="https://www.linkedin.com/in/santhiyamathiyazhagan-a08b10280" target="_blank">LinkedIn</a></p>
+  <p>💻 <a href="https://github.com/santhiyamathiyazhagan526-art" target="_blank">GitHub</a></p>
+</section>
+
+<footer>
+  © 2025 Santhiya • Portfolio
+</footer>
+
+</body>
+</html>
