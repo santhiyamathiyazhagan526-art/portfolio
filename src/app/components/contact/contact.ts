@@ -11,7 +11,7 @@ export class Contact {
   contactDetails = [
     {
       label: 'Email',
-      value: 'your-email@example.com',
+      value: 'santhiyamathiyazhagan526@gmail.com',
       icon: '✉'
     },
     {
@@ -21,7 +21,7 @@ export class Contact {
     },
     {
       label: 'LinkedIn',
-      value: 'LinkedIn Profile',
+      value: 'https://www.linkedin.com/in/santhiya-mathiyazhagan-a08b10280/',
       icon: 'in'
     }
   ];
