@@ -1,1 +1,157 @@
 /* You can add global styles to this file, and also import other style files */
+/* ================================
+   GLOBAL RESET
+================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #080b14;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ================================
+   COMMON CONTAINER
+================================ */
+
+.container {
+  width: min(90%, 1200px);
+  margin: auto;
+}
+
+/* ================================
+   SECTION
+================================ */
+
+section {
+  position: relative;
+  width: 100%;
+}
+
+/* ================================
+   GRADIENT TEXT
+================================ */
+
+.gradient-text {
+  background: linear-gradient(
+    90deg,
+    #8b5cf6,
+    #3b82f6
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ================================
+   COMMON BUTTON
+================================ */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 13px 25px;
+
+  border-radius: 8px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+/* ================================
+   PRIMARY BUTTON
+================================ */
+
+.btn-primary {
+  background: linear-gradient(
+    90deg,
+    #7c3aed,
+    #2563eb
+  );
+
+  color: white;
+}
+
+.btn-primary:hover {
+  box-shadow:
+    0 10px 30px rgba(99, 102, 241, 0.35);
+}
+
+/* ================================
+   SECONDARY BUTTON
+================================ */
+
+.btn-outline {
+  border: 1px solid #4b5563;
+  color: white;
+  background: transparent;
+}
+
+.btn-outline:hover {
+  border-color: #8b5cf6;
+  background: rgba(139, 92, 246, 0.08);
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 768px) {
+
+  .container {
+    width: 92%;
+  }
+
+  .btn {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .container {
+    width: 94%;
+  }
+
+}

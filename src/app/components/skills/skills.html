@@ -1,0 +1,83 @@
+<section class="skills-section" id="skills">
+
+  <div class="skills-container">
+
+    <!-- Section Heading -->
+    <div class="section-heading">
+
+      <span class="section-label">
+        MY SKILLS
+      </span>
+
+      <h2>
+        Technologies I
+        <span>Work With</span>
+      </h2>
+
+      <p>
+        Technologies and tools I use to build practical applications.
+      </p>
+
+    </div>
+
+
+    <!-- Skills Grid -->
+    <div class="skills-grid">
+
+      @for (skill of skills; track skill.name) {
+
+        <div class="skill-card">
+
+          <!-- Skill Icon -->
+          <div class="skill-icon">
+            {{ skill.name.charAt(0) }}
+          </div>
+
+          <!-- Skill Details -->
+          <div class="skill-content">
+
+            <h3>
+              {{ skill.name }}
+            </h3>
+
+            <span>
+              {{ skill.category }}
+            </span>
+
+          </div>
+
+        </div>
+
+      }
+
+    </div>
+
+
+    <!-- Tools Section -->
+    <div class="tools-section">
+
+      <h3>
+        Tools &amp; Technologies
+      </h3>
+
+      <div class="tools-list">
+
+        <span>GitHub</span>
+
+        <span>VS Code</span>
+
+        <span>XAMPP</span>
+
+        <span>Canva</span>
+
+        <span>MS Excel</span>
+
+        <span>pgAdmin</span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>

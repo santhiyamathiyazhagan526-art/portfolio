@@ -1,0 +1,73 @@
+<section class="education-section" id="education">
+
+  <div class="education-container">
+
+    <!-- Section Heading -->
+    <div class="section-heading">
+
+      <span class="section-label">
+        EDUCATION
+      </span>
+
+      <h2>
+        My Academic
+        <span>Journey</span>
+      </h2>
+
+      <p>
+        My educational background and academic journey.
+      </p>
+
+    </div>
+
+
+    <!-- Education Cards -->
+    <div class="education-grid">
+
+      @for (
+        item of education;
+        track item.institution
+      ) {
+
+        <article class="education-card">
+
+          <!-- Education Icon -->
+          <div class="education-icon">
+            🎓
+          </div>
+
+
+          <!-- Education Content -->
+          <div class="education-content">
+
+            <span class="education-period">
+              {{ item.period }}
+            </span>
+
+            <h3>
+              {{ item.degree }}
+            </h3>
+
+            <h4>
+              {{ item.field }}
+            </h4>
+
+            <div class="education-institution">
+              {{ item.institution }}
+            </div>
+
+            <p>
+              {{ item.description }}
+            </p>
+
+          </div>
+
+        </article>
+
+      }
+
+    </div>
+
+  </div>
+
+</section>

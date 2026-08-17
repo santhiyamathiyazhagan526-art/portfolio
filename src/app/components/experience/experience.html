@@ -1,0 +1,98 @@
+<section class="experience-section" id="experience">
+
+  <div class="experience-container">
+
+    <!-- Section Heading -->
+    <div class="section-heading">
+
+      <span class="section-label">
+        EXPERIENCE
+      </span>
+
+      <h2>
+        My Professional
+        <span>Journey</span>
+      </h2>
+
+      <p>
+        My internship experience and hands-on development journey.
+      </p>
+
+    </div>
+
+
+    <!-- Experience Timeline -->
+    <div class="experience-timeline">
+
+      @for (
+        experience of experiences;
+        track experience.company
+      ) {
+
+        <article class="experience-card">
+
+          <!-- Timeline Dot -->
+          <div class="timeline-dot"></div>
+
+
+          <!-- Experience Header -->
+          <div class="experience-header">
+
+            <div class="experience-icon">
+              {{ experience.company.charAt(0) }}
+            </div>
+
+            <div class="experience-title">
+
+              <span class="experience-type">
+                {{ experience.type }}
+              </span>
+
+              <h3>
+                {{ experience.company }}
+              </h3>
+
+              <h4>
+                {{ experience.role }}
+              </h4>
+
+            </div>
+
+          </div>
+
+
+          <!-- Description -->
+          <div class="experience-content">
+
+            <p>
+              {{ experience.description }}
+            </p>
+
+          </div>
+
+
+          <!-- Technologies -->
+          <div class="experience-technologies">
+
+            @for (
+              technology of experience.technologies;
+              track technology
+            ) {
+
+              <span>
+                {{ technology }}
+              </span>
+
+            }
+
+          </div>
+
+        </article>
+
+      }
+
+    </div>
+
+  </div>
+
+</section>

@@ -1,0 +1,81 @@
+<nav class="navbar">
+
+  <div class="nav-container">
+
+    <!-- Logo -->
+    <a href="#home" class="logo">
+      SANTHIYA
+    </a>
+
+    <!-- Desktop Navigation -->
+    <ul class="nav-links">
+
+      <li>
+        <a href="#home">Home</a>
+      </li>
+
+      <li>
+        <a href="#about">About</a>
+      </li>
+
+      <li>
+        <a href="#skills">Skills</a>
+      </li>
+
+      <li>
+        <a href="#projects">Projects</a>
+      </li>
+
+      <li>
+        <a href="#experience">Experience</a>
+      </li>
+
+      <li>
+        <a href="#education">Education</a>
+      </li>
+
+      <li>
+        <a href="#contact">Contact</a>
+      </li>
+
+    </ul>
+
+    <!-- Mobile Menu Button -->
+    <button
+      class="menu-toggle"
+      type="button"
+      (click)="toggleMenu()"
+      [attr.aria-expanded]="menuOpen"
+      aria-label="Toggle navigation menu">
+
+      <span></span>
+      <span></span>
+      <span></span>
+
+    </button>
+
+  </div>
+
+
+  <!-- Mobile Navigation -->
+  <div
+    class="mobile-menu"
+    [class.active]="menuOpen">
+
+    <a href="#home" (click)="closeMenu()">Home</a>
+
+    <a href="#about" (click)="closeMenu()">About</a>
+
+    <a href="#skills" (click)="closeMenu()">Skills</a>
+
+    <a href="#projects" (click)="closeMenu()">Projects</a>
+
+    <a href="#experience" (click)="closeMenu()">Experience</a>
+
+    <a href="#education" (click)="closeMenu()">Education</a>
+
+    <a href="#contact" (click)="closeMenu()">Contact</a>
+
+  </div>
+
+</nav>
