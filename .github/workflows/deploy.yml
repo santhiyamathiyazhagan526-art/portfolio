@@ -40,7 +40,7 @@ jobs:
       - name: Upload Angular build
         uses: actions/upload-pages-artifact@v4
         with:
-          path: ./dist/portfolio
+          path: ./dist/portfolio/browser
 
   deploy:
     runs-on: ubuntu-latest
